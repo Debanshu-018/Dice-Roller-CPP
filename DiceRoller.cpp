@@ -45,7 +45,7 @@ int main() {
                 break;
 
             case 4:
-                cout << "-----\n";
+                cout << "------\n";
                 cout << "|* *|\n";
                 cout << "|   |\n";
                 cout << "|* *|\n";
@@ -53,7 +53,7 @@ int main() {
                 break;
 
             case 5:
-                cout << "-----\n";
+                cout << "------\n";
                 cout << "|* *|\n";
                 cout << "| * |\n";
                 cout << "|* *|\n";
@@ -61,7 +61,7 @@ int main() {
                 break;
 
             case 6:
-                cout << "-----\n";
+                cout << "------\n";
                 cout << "|* *|\n";
                 cout << "|* *|\n";
                 cout << "|* *|\n";
@@ -69,7 +69,7 @@ int main() {
                 break;
         }
 
-        cout << "\nRoll again? (Y/N): ";
+        cout << "\nRoll  again? (Y/N): ";
         cin >> choice;
 
     } while (choice == 'Y' || choice == 'y');

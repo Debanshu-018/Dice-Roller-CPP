@@ -1,4 +1,4 @@
-// Q1. Find Maximum and Minimum Element
+// Q1. Find Maximum and Minimum Element.
 #include <iostream>
 using namespace std;
 
@@ -24,7 +24,7 @@ int main() {
 }
 
 
-// Q2.Reverse an Array
+// Q2.Reverse an Array.
 #include <iostream>
 using namespace std;
 
@@ -49,7 +49,7 @@ int main() {
     return 0;
 }
 
-// 3. Find the Second Largest Element
+// 3. Find the Second Largest Element.
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -76,7 +76,7 @@ int main() {
     return 0;
 }
 
-// Q4. Remove Duplicates from a Sorted Array
+// Q4. Remove Duplicates from a Sorted Array.
 #include <iostream>
 using namespace std;
 
@@ -101,7 +101,7 @@ int main() {
     return 0;
 }
 
-// Q5. Find the Missing Number
+// Q5. Find the Missing Number.
 #include <iostream>
 using namespace std;
 
@@ -120,7 +120,7 @@ int main() {
     return 0;
 }
 
-// Q6.Find Frequency of Each Element
+// Q6.Find Frequency of Each Element.
 #include <iostream>
 using namespace std;
 
@@ -149,7 +149,41 @@ int main() {
     return 0;
 }
 
-// Q7.Merge Two Sorted Arrays
+// Q7.Merge Two Sorted Arrays.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[] = {1, 3, 5, 7};
+    int b[] = {2, 4, 6, 8};
+
+    int n = 4;
+    int m = 4;
+
+    int c[8];
+
+    int i = 0, j = 0, k = 0;
+
+    while (i < n && j < m) {
+        if (a[i] < b[j])
+            c[k++] = a[i++];
+        else
+            c[k++] = b[j++];
+    }
+
+    while (i < n)
+        c[k++] = a[i++];
+
+    while (j < m)
+        c[k++] = b[j++];
+
+    cout << "Merged array: ";
+
+    for (int x = 0; x < k; x++)
+        cout << c[x] << " ";
+
+    return 0;
+}
 
 
 

@@ -22,3 +22,28 @@ int main() {
 
     return 0;
 }
+
+
+// Q2. Reverse an Array2. Reverse an Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

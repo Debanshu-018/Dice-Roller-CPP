@@ -235,6 +235,8 @@ int main() {
     return 0;
 }
 
+// Q10.Check if one string is a rotation of another.
+
 
 
 

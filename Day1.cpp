@@ -119,6 +119,8 @@ int main() {
     return 0;
 }
 
+// Q6.Find Frequency of Each Element
+
 
 
 

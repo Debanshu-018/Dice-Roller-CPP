@@ -236,6 +236,31 @@ int main() {
 }
 
 // Q10.Check if one string is a rotation of another.
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string s1 = "ABCD";
+    string s2 = "CDAB";
+
+    // Rotation is possible only if lengths are equal
+    if (s1.length() != s2.length()) {
+        cout << "Not a rotation";
+        return 0;
+    }
+
+    // Concatenate s1 with itself
+    string combined = s1 + s1;
+
+    // Check if s2 exists inside combined
+    if (combined.find(s2) != string::npos)
+        cout << "Strings are rotations";
+    else
+        cout << "Strings are not rotations";
+
+    return 0;
+}
 
 
 

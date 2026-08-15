@@ -121,6 +121,49 @@ int main() {
 
     return 0;
 }
+// Q5. Generate All Subsets of a Set.
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void generateSubsets(vector<int>& arr,
+                     vector<int>& current,
+                     int index) {
+
+    if (index == arr.size()) {
+
+        cout << "{ ";
+
+        for (int x : current)
+            cout << x << " ";
+
+        cout << "}" << endl;
+
+        return;
+    }
+
+    // Include current element
+    current.push_back(arr[index]);
+
+    generateSubsets(arr, current, index + 1);
+
+    current.pop_back();
+
+    // Exclude current element
+    generateSubsets(arr, current, index + 1);
+}
+
+int main() {
+
+    vector<int> arr = {1, 2, 3};
+    vector<int> current;
+
+    cout << "All Subsets:" << endl;
+
+    generateSubsets(arr, current, 0);
+
+    return 0;
+}
 
 
 

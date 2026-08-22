@@ -23,4 +23,22 @@ int main() {
     return 0;
 }
 
-Q2. Find Minimum Element
+// Q2. Find Minimum Element
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 5, 20, 8, 15};
+    int n = 5;
+
+    int mini = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < mini)
+            mini = arr[i];
+    }
+
+    cout << "Minimum = " << mini;
+
+    return 0;
+}

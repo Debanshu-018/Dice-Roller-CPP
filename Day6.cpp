@@ -105,8 +105,32 @@ int main() {
 
     return 0;
 }
+// Q6. Find Second Largest Element
+#include <iostream>
+#include <climits>
+using namespace std;
 
+int main() {
+    int arr[] = {10, 5, 20, 8, 15};
+    int n = 5;
 
+    int largest = INT_MIN;
+    int second = INT_MIN;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > largest) {
+            second = largest;
+            largest = arr[i];
+        }
+        else if (arr[i] > second && arr[i] != largest) {
+            second = arr[i];
+        }
+    }
+
+    cout << "Second Largest = " << second;
+
+    return 0;
+}
 
 
 

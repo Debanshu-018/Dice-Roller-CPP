@@ -1,6 +1,6 @@
 // Q1. Find Maximum and Minimum Element.
 #include <iostream>
-using namespace std;
+using namespace std; 
 
 int main() {
     int arr[] = {5, 2, 9, 1, 7};

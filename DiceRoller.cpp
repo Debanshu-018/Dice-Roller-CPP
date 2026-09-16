@@ -10,9 +10,9 @@ int main() {
     // Seed the random number generator
     srand(time(0));
 
-    cout << "====================================" << endl;
+    cout << "=====================================" << endl;
     cout << "       DICE ROLLER SIMULATOR       " << endl;
-    cout << "====================================" << endl;
+    cout << "=====================================" << endl;
 
     do {
         int dice = rand() % 6 + 1;
